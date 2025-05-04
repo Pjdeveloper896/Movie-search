@@ -1,0 +1,8 @@
+.heading {
+  font-weight: bold; 
+  background-image: url('/Heroic Power in Blue and Yellow.png');
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent; 
+}
