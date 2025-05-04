@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>React</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@7.5.1/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@7.5.1/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@7.5.1/css/ionic.bundle.css"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+  <!-- React -->
+  <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+  <link rel="stylesheet" href="/cdn_modules/bulma@1.0.3/css/bulma.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="App.css" type="text/css" media="all" />
+</head>
+
+<body x-data="{ open: false }">
+  <ion-app>
+    <ion-toolbar>
+      <ion-header>
+        <h1>
+            <svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="msGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: orange; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: white; stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <text x="10" y="55" font-family="Verdana" font-size="60" font-weight="bold" fill="url(#msGradient)">
+      movies Fans
+    </text>
+  </svg>
+        </h1>
+        <ion-button class="bg-blue-700 text-white rounded-md" @click="open = !open"><svg width="20" height="15" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+  <rect y="0" width="50" height="10" fill="white"/>
+  <rect y="30" width="50" height="10" fill="white"/>
+  <rect y="60" width="50" height="10" fill="white"/>
+</svg>
+</ion-button>
+        <div class="box nav-burger" x-show="open" x-transition>
+          <a  class="box text-blue-700 flex-wrap hover:text-orange-700">home</a>
+          <a class="box text-blue-700 flex-wrap hover:text-orange-700" >about</a>
+          <a  class="box text-blue-700 flex-wrap hover:text-orange-700">contact</a>
+          <a class="box text-blue-700 flex-wrap hover:text-orange-700">product</a>
+          </div>
+      </ion-header>
+    </ion-toolbar>
+    <ion-content>
+      <div id="react-app"></div>
+    </ion-content>
+    <ion-footer>
+      <div id="footer" class="box bg-black text-white">
+        welcome to our site
+        <p>&copy; imagination powered by pjdeveloper</p>
+      </div>
+    </ion-footer>
+  </ion-app>
+
+
+
+  <!-- Project -->
+  <script src="config.js"></script>
+</body>
+</html>
